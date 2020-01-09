@@ -1,5 +1,48 @@
-h1 {
-  color: red;
+body {
+  background-color: #21212e;
+}
+
+.navbar {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  display: flex;
+  padding-top: 10px;
+}
+.logo img {
+  height: 60px;
+}
+.logo p {
+  margin-left: 10px;
+  color: white;
+  font-family: "roboto";
+  font-size: 20px;
+  font-weight: 300;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  padding: 10px 25px 10px 25px;
+  list-style: none;
+  font-family: "roboto";
+  color: #7B7B9D;
+  opacity: 0.5;
+  font-size: 16px;
+  font-weight: lighter;
+}
+li:last-child {
+  opacity: 1;
+  border: solid 1px;
+  border-color: white;
+  border-radius: 10px;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

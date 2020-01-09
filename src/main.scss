@@ -1,4 +1,66 @@
-// Test fonctionnement SASS
-h1{
-    color: red;
+// Terminal 1 : SASS
+// Terminal 2 : Git
+
+// Liens vers les autres feuilles de style SASS
+@import "variables.scss";
+
+// Couleur du body
+body{
+    background-color: #21212e;
 }
+
+
+// Navbar
+.navbar{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+// Mise en place du logo
+.logo{
+    display: flex;
+    padding-top: 10px;
+
+    // Image du logo
+    img{
+        height: 60px;
+    }
+
+    // Titre de l'applicatioon
+    p{
+        margin-left: 10px;
+        color:white;
+        font-family: $font;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+}
+
+
+// Mise en place de la navigation
+ul{
+    display: flex;   
+}
+li{
+    padding: 10px 25px 10px 25px;
+    list-style: none;
+    font-family: $font;
+    color: #7B7B9D;
+    opacity: 0.5;
+    font-size: 16px;
+    font-weight: lighter;
+
+    &:last-child{
+        opacity: 1;
+        border: solid 1px;
+        border-color: white;
+        border-radius: 10px;
+        color: white;
+    }
+
+}
+
