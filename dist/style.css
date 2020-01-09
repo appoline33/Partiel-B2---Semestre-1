@@ -275,11 +275,51 @@ button:last-child {
 }
 
 .soir {
+  position: relative;
+  margin-top: 200px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
+.pink {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+  height: 250px;
+  padding-top: 30px;
+  background: linear-gradient(to right, #46C2FF, #BD11FA);
+}
+.pink h3 {
+  font-family: "roboto";
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+.pink .left p {
+  font-family: "roboto";
+  color: white;
+  font-weight: lighter;
+  font-size: 15px;
+  margin-top: -5px;
+}
+.pink .right p:first-child {
+  font-family: "roboto";
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+.pink .right p:last-child {
+  font-family: "roboto";
+  color: #353535;
+  font-weight: lighter;
+  font-size: 10px;
+  margin-top: -20px;
+}
+
+.paragraphe_soir {
+  width: 400px;
+}
 .paragraphe_soir h2 {
   font-family: "roboto";
   color: white;
@@ -303,6 +343,31 @@ button:last-child {
   background: linear-gradient(to right, #46C2FF, #BD11FA);
   border: none;
   box-shadow: 2px 2px 20px #BD11FA;
+}
+
+.evening_mode_on {
+  width: 300px;
+  height: 200px;
+  padding: 0 10px 0 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px black;
+  position: relative;
+  z-index: 4;
+  left: -505px;
+  top: 190px;
+  background-color: #353535;
+}
+.evening_mode_on h4 {
+  font-family: "roboto";
+  color: white;
+  font-size: 16px;
+  font-weight: 350;
+}
+.evening_mode_on p {
+  font-family: "roboto";
+  color: rgba(138, 138, 168, 0.616);
+  font-size: 13px;
+  font-weight: lighter;
 }
 
 /*# sourceMappingURL=style.css.map */
