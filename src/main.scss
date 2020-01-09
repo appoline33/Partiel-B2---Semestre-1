@@ -3,10 +3,11 @@
 
 // Liens vers les autres feuilles de style SASS
 @import "variables.scss";
+@import "mixins.scss";
 
 // Couleur du body
 body{
-    background-color: #21212e;
+    background-color: #21202e;
 }
 
 
@@ -49,20 +50,19 @@ li{
     padding: 10px 25px 10px 25px;
     list-style: none;
     font-family: $font;
-    color: #7B7B9D;
-    opacity: 0.5;
+    color: $color_paragraphes;
     font-size: 16px;
     font-weight: lighter;
 
     &:last-child{
-        opacity: 1;
         border: solid 1px;
         border-color: white;
         border-radius: 10px;
-        color: white;
+        color: $color_h1;
     }
 
 }
+
 
 // Image triangle sous la navbar
 .triangle{
@@ -74,4 +74,59 @@ li{
         height: 135px;
         margin-top: 20px;
     }
+}
+
+
+// Section Showcase
+.section_showcase{
+    height: 500px;
+    width: 100%;
+    background-color: indigo;
+}
+.showcase{
+    height: 300px;
+    width: 24%;
+    padding-left: 65px;
+    background-color: khaki;
+
+    // Titre h1
+    h1{
+        @include h1();
+        text-align: center;
+    }
+
+    // Paragraphe de la section
+    p{
+        font-family: $font;
+        color: $color_paragraphes;
+        font-size: 13px;
+        font-weight: lighter;
+    }
+
+    // Boutons de la section
+    .btn{
+        display: flex;
+        // justify-content: center;
+    }
+    button{
+        font-family: $font;
+        font-size: 16px;
+        color: $color_h1;
+        font-weight: lighter;
+        padding: 15px 25px 15px 25px;
+        margin-top: 25px;
+        border-radius: 10px;
+
+        &:first-child{
+            background: linear-gradient(to right, #46C2FF, #BD11FA);
+            border: none;
+        }
+
+        &:last-child{
+            background: transparent;
+            border: solid 1px white;
+            margin-left: 14px;
+        }
+    }
+
 }

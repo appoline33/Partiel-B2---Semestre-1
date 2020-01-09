@@ -1,0 +1,8 @@
+// Mise en forme du texte
+// h1
+@mixin h1{
+    font-family: $font;
+    color: white;
+    font-weight: 320;
+    font-size: 37px;
+}

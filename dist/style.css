@@ -1,5 +1,5 @@
 body {
-  background-color: #21212e;
+  background-color: #21202e;
 }
 
 .navbar {
@@ -32,13 +32,11 @@ li {
   padding: 10px 25px 10px 25px;
   list-style: none;
   font-family: "roboto";
-  color: #7B7B9D;
-  opacity: 0.5;
+  color: rgba(138, 138, 168, 0.616);
   font-size: 16px;
   font-weight: lighter;
 }
 li:last-child {
-  opacity: 1;
   border: solid 1px;
   border-color: white;
   border-radius: 10px;
@@ -53,6 +51,53 @@ li:last-child {
 .triangle img {
   height: 135px;
   margin-top: 20px;
+}
+
+.section_showcase {
+  height: 500px;
+  width: 100%;
+  background-color: indigo;
+}
+
+.showcase {
+  height: 300px;
+  width: 24%;
+  padding-left: 65px;
+  background-color: khaki;
+}
+.showcase h1 {
+  font-family: "roboto";
+  color: white;
+  font-weight: 320;
+  font-size: 37px;
+  text-align: center;
+}
+.showcase p {
+  font-family: "roboto";
+  color: rgba(138, 138, 168, 0.616);
+  font-size: 13px;
+  font-weight: lighter;
+}
+.showcase .btn {
+  display: flex;
+}
+.showcase button {
+  font-family: "roboto";
+  font-size: 16px;
+  color: white;
+  font-weight: lighter;
+  padding: 15px 25px 15px 25px;
+  margin-top: 25px;
+  border-radius: 10px;
+}
+.showcase button:first-child {
+  background: linear-gradient(to right, #46C2FF, #BD11FA);
+  border: none;
+}
+.showcase button:last-child {
+  background: transparent;
+  border: solid 1px white;
+  margin-left: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
