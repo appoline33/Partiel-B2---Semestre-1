@@ -100,10 +100,7 @@ li{
 
     // Paragraphe de la section
     p{
-        font-family: $font;
-        color: $color_paragraphes;
-        font-size: 13px;
-        font-weight: lighter;
+        @include paragraphe();
     }   
 }
 // Boutons de la section
@@ -131,9 +128,97 @@ button{
     }
 }
 // Mockup Iphones
-.mockup{
+.mockup img{
+    height: 800px;
+    margin-top: -178px;
+}
+
+
+// Triangle 2
+.triangle-2 img{ 
+    height: 220px;
+    margin-left: 30px;
+}
+
+
+// Section multi-logos
+.multi-logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+// Logos divers
+.logos{
+    display: flex;
+    flex-direction: column;
+
     img{
-        height: 800px;
-        margin-top: -178px;
+        height: 45px;
     }
 }
+// Ligne-1
+.ligne-1{ 
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 10px 0;
+}
+.aws{
+    margin: 0 15px 0 0;
+    padding: 20px 30px 20px 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px black;
+}
+
+.puma{
+    @extend .aws;
+}
+// Ligne-2
+.ligne-2{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0 10px 0;
+
+}
+.microsoft{
+    @extend .aws;
+    img{
+        height: 30px;
+    }
+}
+.inkyy{
+    @extend .aws;
+}
+.nike{
+    @extend .aws;
+}
+// Ligne-3
+.ligne-3{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.disney{
+    @extend .aws;
+}
+.converse{
+    @extend .aws;
+}
+.itunes{
+    @extend .aws;
+}
+
+// Paragraphe
+.paragraphe{
+    width: 400px;
+
+    // Titre h2 de la section
+    h2{
+        @include h2();
+    }
+
+    // Paragraphe de la section
+    p{
+        @include paragraphe();
+    }
+}
+

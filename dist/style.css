@@ -110,4 +110,68 @@ button:last-child {
   margin-top: -178px;
 }
 
+.triangle-2 img {
+  height: 220px;
+  margin-left: 30px;
+}
+
+.multi-logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+}
+.logos img {
+  height: 45px;
+}
+
+.ligne-1 {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 10px 0;
+}
+
+.aws, .itunes, .converse, .disney, .nike, .inkyy, .microsoft, .puma {
+  margin: 0 15px 0 0;
+  padding: 20px 30px 20px 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px black;
+}
+
+.ligne-2 {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0 10px 0;
+}
+
+.microsoft img {
+  height: 30px;
+}
+
+.ligne-3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.paragraphe {
+  width: 400px;
+}
+.paragraphe h2 {
+  font-family: "roboto";
+  color: white;
+  font-weight: 450;
+  font-size: 25px;
+}
+.paragraphe p {
+  font-family: "roboto";
+  color: rgba(138, 138, 168, 0.616);
+  font-size: 13px;
+  font-weight: lighter;
+}
+
 /*# sourceMappingURL=style.css.map */

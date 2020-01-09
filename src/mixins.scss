@@ -6,3 +6,19 @@
     font-weight: 320;
     font-size: 37px;
 }
+
+//h2
+@mixin h2{
+    font-family: $font;
+    color: white;
+    font-weight: 450;
+    font-size: 25px;
+}
+
+//paragraphe
+@mixin paragraphe{
+    font-family: $font;
+    color: $color_paragraphes;
+    font-size: 13px;
+    font-weight: lighter;
+}
