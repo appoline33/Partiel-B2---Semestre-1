@@ -12,7 +12,7 @@ body{
 
 // Navbar
 .navbar{
-    height: 200px;
+    height: 95px;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -64,3 +64,14 @@ li{
 
 }
 
+// Image triangle sous la navbar
+.triangle{
+    height: 150px;
+    width: auto;
+    text-align: center;
+
+    img{
+        height: 135px;
+        margin-top: 20px;
+    }
+}
