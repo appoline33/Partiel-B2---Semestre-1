@@ -108,23 +108,13 @@ li{
     display: flex;
 }
 button{
-    font-family: $font;
-    font-size: 16px;
-    color: $color_h1;
-    font-weight: lighter;
-    padding: 15px 25px 15px 25px;
-    margin-top: 25px;
-    border-radius: 10px;
-
+    
     &:first-child{
-        background: linear-gradient(to right, #46C2FF, #BD11FA);
-        border: none;
+        @include button_gradient();
     }
 
     &:last-child{
-        background: transparent;
-        border: solid 1px white;
-        margin-left: 14px;
+        @include button();
     }
 }
 // Mockup Iphones
@@ -222,3 +212,120 @@ button{
     }
 }
 
+
+// Image de cercle
+.cercle{
+    // position: relative;
+    display: flex;
+    justify-content: flex-end;
+
+    img{
+        height: 400px;
+        // position:absolute;
+        // clip:rect(0, 0, 10px, 20px);
+    }
+}
+
+
+// Section Cards
+.section_cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+//Powerful Features
+.powerful{
+    width: 117px;
+    padding: 10px;
+    background-color: rgba(0, 77, 50, 0.753);
+    color: #00EC98;
+    font-family: $font;
+    font-size: 14px;
+}
+// Texte
+.texte{
+    width: 450px;
+}
+.texte h2{
+    @include h2();
+}
+.texte p{
+    @include paragraphe();
+}
+.texte button{
+    @include button_gradient();
+}
+// Cards Totales
+.cards-totales{
+    display: flex;
+}
+// Cards
+.cards-1{
+    width: 300px;
+    padding: 50px 0 50px 0;
+    margin: 30px 30px 30px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px black;
+    
+    // Image
+    .img{
+        display: flex;
+        height: 70px;
+        align-items: center;
+        background-color: rgb(57, 57, 77);
+    }
+    img{
+        height: 45px;
+        padding-left: 30px;
+    }
+
+    // Titre h3
+    h3{
+        @include h3();
+        padding-left: 30px;
+    }
+
+    // Paragraphe
+    p{
+        @include paragraphe();
+        padding-left: 30px;
+    }
+}
+.cards-2{
+    @extend .cards-1;
+}
+.cards-3{
+    @extend .cards-1;
+}
+.cards-4{
+    @extend .cards-1;
+}
+// Colonne 2
+.colonne-2{
+    margin-top: 120px;
+}
+
+
+// Section soir
+.soir{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+// Paragraphe
+.paragraphe_soir{
+    
+    // h2
+    h2{
+        @include h2();
+    }
+
+    // Paragraphe
+    p{
+        @include paragraphe();
+    }
+
+    button{
+        @include button_gradient();
+    }
+}

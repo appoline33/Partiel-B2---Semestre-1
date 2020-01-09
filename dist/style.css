@@ -86,7 +86,7 @@ li:last-child {
   display: flex;
 }
 
-button {
+button:first-child {
   font-family: "roboto";
   font-size: 16px;
   color: white;
@@ -94,12 +94,18 @@ button {
   padding: 15px 25px 15px 25px;
   margin-top: 25px;
   border-radius: 10px;
-}
-button:first-child {
   background: linear-gradient(to right, #46C2FF, #BD11FA);
   border: none;
+  box-shadow: 2px 2px 20px #BD11FA;
 }
 button:last-child {
+  font-family: "roboto";
+  font-size: 16px;
+  color: white;
+  font-weight: lighter;
+  padding: 15px 25px 15px 25px;
+  margin-top: 25px;
+  border-radius: 10px;
   background: transparent;
   border: solid 1px white;
   margin-left: 14px;
@@ -172,6 +178,131 @@ button:last-child {
   color: rgba(138, 138, 168, 0.616);
   font-size: 13px;
   font-weight: lighter;
+}
+
+.cercle {
+  display: flex;
+  justify-content: flex-end;
+}
+.cercle img {
+  height: 400px;
+}
+
+.section_cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.powerful {
+  width: 117px;
+  padding: 10px;
+  background-color: rgba(0, 77, 50, 0.753);
+  color: #00EC98;
+  font-family: "roboto";
+  font-size: 14px;
+}
+
+.texte {
+  width: 450px;
+}
+
+.texte h2 {
+  font-family: "roboto";
+  color: white;
+  font-weight: 450;
+  font-size: 25px;
+}
+
+.texte p {
+  font-family: "roboto";
+  color: rgba(138, 138, 168, 0.616);
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+.texte button {
+  font-family: "roboto";
+  font-size: 16px;
+  color: white;
+  font-weight: lighter;
+  padding: 15px 25px 15px 25px;
+  margin-top: 25px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #46C2FF, #BD11FA);
+  border: none;
+  box-shadow: 2px 2px 20px #BD11FA;
+}
+
+.cards-totales {
+  display: flex;
+}
+
+.cards-1, .cards-4, .cards-3, .cards-2 {
+  width: 300px;
+  padding: 50px 0 50px 0;
+  margin: 30px 30px 30px 0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px black;
+}
+.cards-1 .img, .cards-4 .img, .cards-3 .img, .cards-2 .img {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  background-color: #39394d;
+}
+.cards-1 img, .cards-4 img, .cards-3 img, .cards-2 img {
+  height: 45px;
+  padding-left: 30px;
+}
+.cards-1 h3, .cards-4 h3, .cards-3 h3, .cards-2 h3 {
+  font-family: "roboto";
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  padding-left: 30px;
+}
+.cards-1 p, .cards-4 p, .cards-3 p, .cards-2 p {
+  font-family: "roboto";
+  color: rgba(138, 138, 168, 0.616);
+  font-size: 13px;
+  font-weight: lighter;
+  padding-left: 30px;
+}
+
+.colonne-2 {
+  margin-top: 120px;
+}
+
+.soir {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.paragraphe_soir h2 {
+  font-family: "roboto";
+  color: white;
+  font-weight: 450;
+  font-size: 25px;
+}
+.paragraphe_soir p {
+  font-family: "roboto";
+  color: rgba(138, 138, 168, 0.616);
+  font-size: 13px;
+  font-weight: lighter;
+}
+.paragraphe_soir button {
+  font-family: "roboto";
+  font-size: 16px;
+  color: white;
+  font-weight: lighter;
+  padding: 15px 25px 15px 25px;
+  margin-top: 25px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #46C2FF, #BD11FA);
+  border: none;
+  box-shadow: 2px 2px 20px #BD11FA;
 }
 
 /*# sourceMappingURL=style.css.map */

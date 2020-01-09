@@ -7,7 +7,7 @@
     font-size: 37px;
 }
 
-//h2
+// h2
 @mixin h2{
     font-family: $font;
     color: white;
@@ -15,10 +15,46 @@
     font-size: 25px;
 }
 
-//paragraphe
+// h3
+@mixin h3{
+    font-family: $font;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+// paragraphe
 @mixin paragraphe{
     font-family: $font;
     color: $color_paragraphes;
     font-size: 13px;
     font-weight: lighter;
+}
+
+// bouton standard
+@mixin button{
+    font-family: $font;
+    font-size: 16px;
+    color: $color_h1;
+    font-weight: lighter;
+    padding: 15px 25px 15px 25px;
+    margin-top: 25px;
+    border-radius: 10px;
+    background: transparent;
+    border: solid 1px white;
+    margin-left: 14px;
+}
+
+// bouton gradient
+@mixin button_gradient{
+    font-family: $font;
+    font-size: 16px;
+    color: $color_h1;
+    font-weight: lighter;
+    padding: 15px 25px 15px 25px;
+    margin-top: 25px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #46C2FF, #BD11FA);
+    border: none;
+    box-shadow: 2px 2px 20px #BD11FA;
 }
