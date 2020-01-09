@@ -1,5 +1,5 @@
 body {
-  background-color: #21202e;
+  background-color: #353535;
 }
 
 .navbar {
@@ -51,19 +51,22 @@ li:last-child {
 .triangle img {
   height: 135px;
   margin-top: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .section_showcase {
+  display: flex;
+  justify-content: flex-end;
   height: 500px;
   width: 100%;
-  background-color: indigo;
 }
 
 .showcase {
-  height: 300px;
-  width: 24%;
-  padding-left: 65px;
-  background-color: khaki;
+  height: 400px;
+  width: 500px;
+  position: relative;
+  z-index: 2;
 }
 .showcase h1 {
   font-family: "roboto";
@@ -78,10 +81,12 @@ li:last-child {
   font-size: 13px;
   font-weight: lighter;
 }
-.showcase .btn {
+
+.btn {
   display: flex;
 }
-.showcase button {
+
+button {
   font-family: "roboto";
   font-size: 16px;
   color: white;
@@ -90,14 +95,19 @@ li:last-child {
   margin-top: 25px;
   border-radius: 10px;
 }
-.showcase button:first-child {
+button:first-child {
   background: linear-gradient(to right, #46C2FF, #BD11FA);
   border: none;
 }
-.showcase button:last-child {
+button:last-child {
   background: transparent;
   border: solid 1px white;
   margin-left: 14px;
+}
+
+.mockup img {
+  height: 800px;
+  margin-top: -178px;
 }
 
 /*# sourceMappingURL=style.css.map */

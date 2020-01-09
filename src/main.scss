@@ -7,7 +7,7 @@
 
 // Couleur du body
 body{
-    background-color: #21202e;
+    background-color: #353535;
 }
 
 
@@ -73,21 +73,24 @@ li{
     img{
         height: 135px;
         margin-top: 20px;
+        position: relative;
+        z-index: 1;
     }
 }
 
 
 // Section Showcase
 .section_showcase{
+    display: flex;
+    justify-content: flex-end;
     height: 500px;
     width: 100%;
-    background-color: indigo;
 }
 .showcase{
-    height: 300px;
-    width: 24%;
-    padding-left: 65px;
-    background-color: khaki;
+    height: 400px;
+    width: 500px;
+    position: relative;
+    z-index: 2;
 
     // Titre h1
     h1{
@@ -101,32 +104,36 @@ li{
         color: $color_paragraphes;
         font-size: 13px;
         font-weight: lighter;
+    }   
+}
+// Boutons de la section
+.btn{
+    display: flex;
+}
+button{
+    font-family: $font;
+    font-size: 16px;
+    color: $color_h1;
+    font-weight: lighter;
+    padding: 15px 25px 15px 25px;
+    margin-top: 25px;
+    border-radius: 10px;
+
+    &:first-child{
+        background: linear-gradient(to right, #46C2FF, #BD11FA);
+        border: none;
     }
 
-    // Boutons de la section
-    .btn{
-        display: flex;
-        // justify-content: center;
+    &:last-child{
+        background: transparent;
+        border: solid 1px white;
+        margin-left: 14px;
     }
-    button{
-        font-family: $font;
-        font-size: 16px;
-        color: $color_h1;
-        font-weight: lighter;
-        padding: 15px 25px 15px 25px;
-        margin-top: 25px;
-        border-radius: 10px;
-
-        &:first-child{
-            background: linear-gradient(to right, #46C2FF, #BD11FA);
-            border: none;
-        }
-
-        &:last-child{
-            background: transparent;
-            border: solid 1px white;
-            margin-left: 14px;
-        }
+}
+// Mockup Iphones
+.mockup{
+    img{
+        height: 800px;
+        margin-top: -178px;
     }
-
 }
